@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3839fc96-7206-4234-93d6-c969c1406b1e" name="Changes" comment="dexian second commit">
-      <change afterPath="$PROJECT_DIR$/dexian-common/src/main/java/com/kalok/dexian/common/api/CommonResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-common/src/main/java/com/kalok/dexian/common/api/ErrorCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-common/src/main/java/com/kalok/dexian/common/api/ResultCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-common/src/main/java/com/kalok/dexian/common/tool/MapAndObjectUtil.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/config/MyBatisConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/controller/AddressController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/controller/IdleItemController.java" afterDir="false" />
@@ -50,11 +46,7 @@
       <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/resources/mapper/IdleItemVideoMapper.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dexian-common" beforeDir="false" afterPath="$PROJECT_DIR$/dexian-common" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dexian-common/src/main/java/com/kalok/dexian/common/DexianCommonApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dexian-common/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dexian-common/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dexian-common/src/test/java/com/kalok/dexian/common/DexianCommonApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/dexian-common/src/test/java/com/kalok/dexian/common/DexianCommonApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dexian-portal" beforeDir="false" afterPath="$PROJECT_DIR$/dexian-portal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/DexianPortalApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/DexianPortalApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dexian-portal/src/main/resources/application.properties" beforeDir="false" />
@@ -117,7 +109,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679666470807</updated>
-      <workItem from="1679666471247" duration="1809000" />
+      <workItem from="1679666471247" duration="2526000" />
     </task>
     <task id="LOCAL-00001" summary="dexian first commit">
       <created>1679666526131</created>
