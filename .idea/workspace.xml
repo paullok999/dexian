@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3839fc96-7206-4234-93d6-c969c1406b1e" name="Changes" comment="dexian first commit">
-      <change afterPath="$PROJECT_DIR$/dexian-common/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-common/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-common/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-common/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-common/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-common/src/main/java/com/kalok/dexian/common/DexianCommonApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-common/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-common/src/test/java/com/kalok/dexian/common/DexianCommonApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/DexianPortalApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/test/java/com/kalok/dexian/portal/DexianPortalApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kalok/dexian/Main.java" beforeDir="false" />
-    </list>
+    <list default="true" id="3839fc96-7206-4234-93d6-c969c1406b1e" name="Changes" comment="dexian second commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +38,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -90,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679666470807</updated>
-      <workItem from="1679666471247" duration="279000" />
+      <workItem from="1679666471247" duration="606000" />
     </task>
     <task id="LOCAL-00001" summary="dexian first commit">
       <created>1679666526131</created>
@@ -106,15 +85,34 @@
       <option name="project" value="LOCAL" />
       <updated>1679666530551</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="dexian second commit">
+      <created>1679666855050</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679666855050</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="dexian first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="dexian first commit" />
+    <MESSAGE value="dexian second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="dexian second commit" />
   </component>
 </project>
