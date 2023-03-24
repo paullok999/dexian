@@ -4,7 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3839fc96-7206-4234-93d6-c969c1406b1e" name="Changes" comment="dexian second commit" />
+    <list default="true" id="3839fc96-7206-4234-93d6-c969c1406b1e" name="Changes" comment="dexian second commit">
+      <change afterPath="$PROJECT_DIR$/dexian-common/src/main/java/com/kalok/dexian/common/api/CommonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-common/src/main/java/com/kalok/dexian/common/api/ErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-common/src/main/java/com/kalok/dexian/common/api/ResultCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-common/src/main/java/com/kalok/dexian/common/tool/MapAndObjectUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/config/MyBatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/controller/AddressController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/controller/IdleItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/controller/UserCollectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/ChatPersonalMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/ChatSystemMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/ForumPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/ForumPostComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/ForumPostReply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/IdleItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/IdleItemImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/IdleItemOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/IdleItemVideo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/PostImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/PostVideo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/UserCollect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/UserFollowerRelation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/UserFollowingRelation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/dto/AddressParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/dto/IdleItemParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/mapper/AddressMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/mapper/IdleItemImageMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/mapper/IdleItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/mapper/IdleItemVideoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/service/AddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/service/IdleItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/service/impl/AddressServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/service/impl/IdleItemServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/resources/mapper/AddressMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/resources/mapper/IdleItemImageMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/resources/mapper/IdleItemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/resources/mapper/IdleItemVideoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-common" beforeDir="false" afterPath="$PROJECT_DIR$/dexian-common" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-common/src/main/java/com/kalok/dexian/common/DexianCommonApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-common/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dexian-common/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-common/src/test/java/com/kalok/dexian/common/DexianCommonApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/dexian-common/src/test/java/com/kalok/dexian/common/DexianCommonApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-portal" beforeDir="false" afterPath="$PROJECT_DIR$/dexian-portal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/DexianPortalApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/DexianPortalApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-portal/src/main/resources/application.properties" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,17 +96,11 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.DexianCommonApplication">
-    <configuration name="DexianCommonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="dexian-common" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kalok.dexian.common.DexianCommonApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="DexianPortalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="dexian-portal" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.kalok.dexian.portal.DexianPortalApplication" />
@@ -69,7 +117,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679666470807</updated>
-      <workItem from="1679666471247" duration="606000" />
+      <workItem from="1679666471247" duration="1809000" />
     </task>
     <task id="LOCAL-00001" summary="dexian first commit">
       <created>1679666526131</created>
@@ -92,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679666855050</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="dexian second commit">
+      <created>1679667195564</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679667195564</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
