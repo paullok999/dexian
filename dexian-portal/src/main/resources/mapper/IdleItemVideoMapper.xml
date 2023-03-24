@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kalok.dexian.portal.mapper.IdleItemVideoMapper">
+    <select id="getAllVideosById" parameterType="java.lang.Long" resultType="com.kalok.dexian.portal.domain.IdleItemVideo">
+        select * from idle_item_videos where idle_item_id = #{itemId}
+    </select>
+
+    <insert id="insertAllVideosByItemId">
+        insert into idle_item_videos(idle_item_id,video_url) values
+        <foreach item="video" collection="videos" separator=",">
+            (#{idleItemId},#{video.videoUrl})
+        </foreach>
+    </insert>
+
+    <delete id="deleteVideosById" parameterType="java.lang.Long">
+        delete from idle_item_videos where idle_item_id = #{itemId}
+    </delete>
+
+    <update id="updateAllVideosByItemId" parameterType="java.util.List">
+        update idle_item_videos set video_url = case
+        <foreach collection="videos" item="video">
+            when id = #{video.id} then #{video.videoUrl}
+        </foreach>
+        end
+        where idle_item_id in
+        <foreach collection="videos" item="video" open="(" separator="," close=")">
+            #{video.idleItemId}
+        </foreach>
+    </update>
+</mapper>

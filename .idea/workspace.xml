@@ -5,51 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3839fc96-7206-4234-93d6-c969c1406b1e" name="Changes" comment="dexian second commit">
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/config/MyBatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/controller/AddressController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/controller/IdleItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/controller/UserCollectController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/ChatPersonalMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/ChatSystemMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/ForumPost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/ForumPostComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/ForumPostReply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/IdleItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/IdleItemImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/IdleItemOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/IdleItemVideo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/PostImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/PostVideo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/UserCollect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/UserFollowerRelation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/domain/UserFollowingRelation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/dto/AddressParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/dto/IdleItemParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/mapper/AddressMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/mapper/IdleItemImageMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/mapper/IdleItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/mapper/IdleItemVideoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/service/AddressService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/service/IdleItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/service/impl/AddressServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/service/impl/IdleItemServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/resources/mapper/AddressMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/resources/mapper/IdleItemImageMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/resources/mapper/IdleItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/resources/mapper/IdleItemVideoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-portal/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dexian-common" beforeDir="false" afterPath="$PROJECT_DIR$/dexian-common" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dexian-portal" beforeDir="false" afterPath="$PROJECT_DIR$/dexian-portal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/DexianPortalApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/DexianPortalApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dexian-portal/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +39,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -89,10 +52,19 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.ignored.files",
+    "spring.configuration.checksum": "e05025c2d4f6c0e6961a5d512e5c5588",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.DexianPortalApplication">
+    <configuration name="DexianCommonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="dexian-common" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kalok.dexian.common.DexianCommonApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DexianPortalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="dexian-portal" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.kalok.dexian.portal.DexianPortalApplication" />
@@ -109,7 +81,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679666470807</updated>
-      <workItem from="1679666471247" duration="2526000" />
+      <workItem from="1679666471247" duration="3557000" />
+      <workItem from="1679670048806" duration="1801000" />
     </task>
     <task id="LOCAL-00001" summary="dexian first commit">
       <created>1679666526131</created>

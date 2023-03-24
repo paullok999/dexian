@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kalok.dexian.portal.mapper.IdleItemImageMapper">
+    <select id="getAllImagesById" parameterType="java.lang.Long" resultType="com.kalok.dexian.portal.domain.IdleItemImage">
+        select * from idle_item_images where idle_item_id = #{itemId}
+    </select>
+
+    <insert id="insertAllImagesByItemId">
+        insert into idle_item_images(idle_item_id,image_url) values
+        <foreach item="image" collection="images" separator=",">
+            (#{idleItemId},#{image.imageUrl})
+        </foreach>
+    </insert>
+    <delete id="deleteImagesById" parameterType="java.lang.Long">
+        delete from idle_item_images where idle_item_id = #{itemId}
+    </delete>
+
+    <update id="updateAllImagesByItemId" parameterType="java.util.List">
+        update idle_item_images set image_url = case
+        <foreach collection="images" item="image">
+                when id = #{image.id} then #{image.imageUrl}
+        </foreach>
+        end
+        where idle_item_id in
+        <foreach collection="images" item="image" open="(" separator="," close=")">
+            #{image.idleItemId}
+        </foreach>
+    </update>
+</mapper>

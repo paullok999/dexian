@@ -26,7 +26,7 @@
         <druid.version>1.2.9</druid.version>
         <mybatis.version>3.5.9</mybatis.version>
         <mysql-connector.version>8.0.29</mysql-connector.version>
-        <dexian-common.version>1.0-SNAPSHOT</dexian-common.version>
+        <dexian-common.version>0.0.1-SNAPSHOT</dexian-common.version>
         <spring-data-commons.version>2.7.0</spring-data-commons.version>
     </properties>
     <dependencies>
