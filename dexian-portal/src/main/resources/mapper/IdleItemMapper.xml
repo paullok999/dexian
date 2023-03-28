@@ -6,8 +6,11 @@
         select it.* from idle_item it where id = #{itemId}
     </select>
 
-    <select id="getItemIdByUserId" parameterType="java.lang.Long" resultType="java.lang.Long">
+    <select id="getItemIdsByUserId" resultType="java.lang.Long">
         select it.id from idle_item it where user_id = #{userId}
+        <if test="isSort == true">
+            order by release_time desc
+        </if>
     </select>
 
     <insert id="insertItem" parameterType="com.kalok.dexian.portal.domain.IdleItem">
@@ -27,4 +30,11 @@
         update idle_item set price = #{item.price},description = #{item.description},is_new = #{item.isNew},
         delivery_method = #{item.deliveryMethod},release_time = #{item.releaseTime} where id = #{item.id}
     </update>
+
+    <select id="getItemByIds" parameterType="java.util.List" resultType="com.kalok.dexian.portal.domain.IdleItem">
+        select * from idle_item where id in
+        <foreach collection="itemIds" item="itemId" open="(" separator="," close=")">
+            #{itemId}
+        </foreach>
+    </select>
 </mapper>

@@ -52,9 +52,10 @@ public class IdleItemServiceImpl implements IdleItemService {
             return -1;
         }
         //查询刚刚的插入成功的闲置物品ID(自动生成)
-        Long itemId = idleItemMapper.getItemIdByUserId(idleItem.getUserId());
-        insertImages(images,itemId);
-        insertVideos(videos,itemId);
+        //所获取集合按发布时间降序排序,我们只需要第一个
+        List<Long> itemIds = idleItemMapper.getItemIdsByUserId(idleItem.getUserId(),true);
+        insertImages(images,itemIds.get(0));
+        insertVideos(videos,itemIds.get(0));
         return count;
     }
 

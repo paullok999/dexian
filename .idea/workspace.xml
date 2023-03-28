@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3839fc96-7206-4234-93d6-c969c1406b1e" name="Changes" comment="dexian second commit" />
+    <list default="true" id="3839fc96-7206-4234-93d6-c969c1406b1e" name="Changes" comment="dexian second commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,10 +57,16 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.settings.project.maven.ignored.files",
-    "spring.configuration.checksum": "e05025c2d4f6c0e6961a5d512e5c5588",
+    "spring.configuration.checksum": "22633825789ab33f3a66a93c85e1128c",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.kalok.dexian.portal.mapper" />
+      <recent name="com.kalok.dexian.portal.service" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.DexianPortalApplication">
     <configuration name="DexianCommonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="dexian-common" />
@@ -77,7 +92,8 @@
       <option name="presentableId" value="Default" />
       <updated>1679666470807</updated>
       <workItem from="1679666471247" duration="3557000" />
-      <workItem from="1679670048806" duration="2155000" />
+      <workItem from="1679670048806" duration="4998000" />
+      <workItem from="1680006732296" duration="8521000" />
     </task>
     <task id="LOCAL-00001" summary="dexian first commit">
       <created>1679666526131</created>
@@ -129,5 +145,20 @@
     <MESSAGE value="dexian first commit" />
     <MESSAGE value="dexian second commit" />
     <option name="LAST_COMMIT_MESSAGE" value="dexian second commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/controller/UserCollectController.java</url>
+          <line>49</line>
+          <properties class="com.kalok.dexian.portal.controller.UserCollectController" method="cancelCollects">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

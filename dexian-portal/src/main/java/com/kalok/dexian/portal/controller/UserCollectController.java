@@ -1,29 +1,62 @@
 package com.kalok.dexian.portal.controller;
 
+import com.kalok.dexian.common.api.CommonResult;
+import com.kalok.dexian.portal.domain.UserCollect;
+import com.kalok.dexian.portal.service.UserCollectService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.Map;
 
 
 @Controller
 @RequestMapping("/collect")
 public class UserCollectController {
 
+    @Autowired
+    UserCollectService userCollectService;
+
     /**
      * 获取指定类型的全部用户收藏
      */
-    @RequestMapping(value = "/{type}",method = RequestMethod.POST)
+    @RequestMapping(value = "/all",method = RequestMethod.POST)
     @ResponseBody
-    public void getAllCollectsByType(@PathVariable("type")Integer collectType){
-
+    public CommonResult<Map<String,Object>> getAllCollectsByType(@RequestParam("id")Long userId,
+                                                                 @RequestParam("collectType")Integer collectType){
+        Map<String,Object> map = userCollectService.getAllCollects(userId,collectType);
+        if(map.size() > 0){
+            return CommonResult.success(map,"获取收藏成功");
+        }
+        return CommonResult.success(null,"你啥都没收藏哟");
     }
 
     /**
      * TODO:加入收藏夹
      */
-    public void addToCollect(){
+    @RequestMapping(value = "/add",method = RequestMethod.POST)
+    @ResponseBody
+    public CommonResult addToCollect(@RequestBody UserCollect userCollect){
+        int count = userCollectService.addToCollect(userCollect);
+        if(count > 0){
+            return CommonResult.success("添加收藏成功~");
+        }
+        return CommonResult.success("添加收藏失败~");
+    }
 
+    /**
+     * TODO:取消收藏(未调试成功)
+     * @param collectIds
+     * @return
+     */
+    @RequestMapping(value = "/cancel",method = RequestMethod.POST)
+    @ResponseBody
+    public CommonResult cancelCollects(@RequestBody List<Long> collectIds){
+        int count = userCollectService.deleteCollects(collectIds);
+        if(count > 0){
+            return CommonResult.success("取消收藏成功~");
+        }
+        return CommonResult.failed("取消收藏失败~");
     }
 }

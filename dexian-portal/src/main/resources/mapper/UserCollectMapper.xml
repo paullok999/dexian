@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kalok.dexian.portal.mapper.UserCollectMapper">
+    <select id="getRelationIds" resultType="java.lang.Long">
+        select uc.relation_id from user_collect uc where user_id = #{userId} and collect_type = #{collectType}
+    </select>
+
+    <insert id="insertCollectRecord">
+        insert into user_collect(user_id,relation_id,collect_type)
+        values(#{collect.userId},#{collect.relationId},#{collect.collectType})
+    </insert>
+
+    <delete id="deleteCollects" parameterType="java.lang.Long">
+        delete from user_collect where id in
+        <foreach collection="collectIds" item="collectId" open="(" separator="," close=")">
+            #{collectId}
+        </foreach>
+    </delete>
+</mapper>
