@@ -46,7 +46,7 @@ public class UserCollectController {
     }
 
     /**
-     * TODO:取消收藏(未调试成功)
+     * 取消收藏(可批量)
      * @param collectIds
      * @return
      */
@@ -57,6 +57,6 @@ public class UserCollectController {
         if(count > 0){
             return CommonResult.success("取消收藏成功~");
         }
-        return CommonResult.failed("取消收藏失败~");
+        return CommonResult.success("取消收藏失败~");
     }
 }

@@ -1,10 +1,12 @@
 package com.kalok.dexian.portal.service.impl;
 
 import com.kalok.dexian.common.api.CommonResult;
+import com.kalok.dexian.portal.dto.UserParam;
 import com.kalok.dexian.portal.mapper.UserMapper;
 import com.kalok.dexian.portal.domain.User;
 import com.kalok.dexian.portal.service.UserService;
 import org.apache.logging.log4j.util.Strings;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,6 +29,8 @@ public class UserServiceImpl implements UserService {
         }else if(!user.getPassword().equals(password)){
             return CommonResult.failed("密码错误");
         }
+        user.setLoginTime(new Date());
+        userMapper.updateLoginTime(user);
         return CommonResult.success(user,"登录成功");
     }
 
@@ -47,6 +51,12 @@ public class UserServiceImpl implements UserService {
         return user;
     }
 
+    @Override
+    public int edit(UserParam userParam) {
+        User user = new User();
+        BeanUtils.copyProperties(userParam,user);
+        return userMapper.updateUser(user);
+    }
 
 
 }

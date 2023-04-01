@@ -11,7 +11,7 @@
     </insert>
 
     <delete id="deleteCollects" parameterType="java.lang.Long">
-        delete from user_collect where id in
+        delete from user_collect where relation_id in
         <foreach collection="collectIds" item="collectId" open="(" separator="," close=")">
             #{collectId}
         </foreach>

@@ -9,4 +9,13 @@
         insert into user_info(username,password,icon,gender,email,nick_name,create_time,login_time)
                 values(#{username},#{password},#{icon},#{gender},#{email},#{nickName},#{createTime},#{loginTime})
     </insert>
+
+    <update id="updateUser" parameterType="com.kalok.dexian.portal.domain.User">
+        update user_info set username = #{username},icon = #{icon},gender = #{gender},
+        email = #{email},nick_name = #{nickName} where id = #{id}
+    </update>
+
+    <update id="updateLoginTime" parameterType="com.kalok.dexian.portal.domain.User">
+        update user_info set login_time = #{loginTime} where id = #{id}
+    </update>
 </mapper>

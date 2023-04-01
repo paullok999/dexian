@@ -8,6 +8,7 @@ import com.kalok.dexian.portal.mapper.IdleItemImageMapper;
 import com.kalok.dexian.portal.mapper.IdleItemMapper;
 import com.kalok.dexian.portal.mapper.IdleItemVideoMapper;
 import com.kalok.dexian.portal.service.IdleItemService;
+import com.kalok.dexian.portal.service.UserBrowseHistoryService;
 import org.apache.logging.log4j.util.Strings;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +31,9 @@ public class IdleItemServiceImpl implements IdleItemService {
     @Autowired
     IdleItemVideoMapper idleItemVideoMapper;
 
+    @Autowired
+    UserBrowseHistoryService userBrowseHistoryService;
+
     @Override
     public Map<String, Object> getItemById(Long itemId) {
         Map<String,Object> resMap = new HashMap<String,Object>();
@@ -37,7 +41,11 @@ public class IdleItemServiceImpl implements IdleItemService {
         List<IdleItemImage> images = idleItemImageMapper.getAllImagesById(itemId);
         List<IdleItemVideo> videos = idleItemVideoMapper.getAllVideosById(itemId);
         /*不空才放入*/
-        if(idleItem != null)resMap.put("item",idleItem);
+        if(idleItem != null){
+            resMap.put("item",idleItem);
+            //插入历史记录(类型:闲置物品)
+            userBrowseHistoryService.insertUserBrowseHistory(idleItem.getId(),0);
+        }
         if(images.size() != 0)resMap.put("images",images);
         if(videos.size() != 0)resMap.put("videos",videos);
         return resMap;

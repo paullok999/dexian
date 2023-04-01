@@ -15,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -51,6 +52,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "D:/Program Files/Project/dexian/dexian-portal/src/main/java/com/kalok/dexian/portal/domain",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,6 +61,11 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.ignored.files",
     "spring.configuration.checksum": "22633825789ab33f3a66a93c85e1128c",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -93,7 +100,9 @@
       <updated>1679666470807</updated>
       <workItem from="1679666471247" duration="3557000" />
       <workItem from="1679670048806" duration="4998000" />
-      <workItem from="1680006732296" duration="8521000" />
+      <workItem from="1680006732296" duration="8913000" />
+      <workItem from="1680330814595" duration="1200000" />
+      <workItem from="1680338410580" duration="11880000" />
     </task>
     <task id="LOCAL-00001" summary="dexian first commit">
       <created>1679666526131</created>
@@ -151,12 +160,21 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/controller/UserCollectController.java</url>
-          <line>49</line>
+          <line>54</line>
           <properties class="com.kalok.dexian.portal.controller.UserCollectController" method="cancelCollects">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/service/impl/UserBrowseHistoryServiceImpl.java</url>
+          <line>23</line>
+          <properties class="com.kalok.dexian.portal.service.impl.UserBrowseHistoryServiceImpl" method="getAllBrowseHistory">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

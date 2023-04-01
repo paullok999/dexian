@@ -10,4 +10,8 @@ public interface UserMapper {
     User getUserByUserName(@Param("username") String username);
 
     void insertUser(User user);
+
+    int updateUser(User user);
+
+    int updateLoginTime(User user);
 }
