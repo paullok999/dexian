@@ -3,7 +3,7 @@ package com.kalok.dexian.portal.service.impl;
 import com.kalok.dexian.common.api.CommonResult;
 import com.kalok.dexian.portal.dto.UserParam;
 import com.kalok.dexian.portal.mapper.UserMapper;
-import com.kalok.dexian.portal.domain.User;
+import com.kalok.dexian.portal.entity.User;
 import com.kalok.dexian.portal.service.UserService;
 import org.apache.logging.log4j.util.Strings;
 import org.springframework.beans.BeanUtils;
@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.List;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -56,6 +57,11 @@ public class UserServiceImpl implements UserService {
         User user = new User();
         BeanUtils.copyProperties(userParam,user);
         return userMapper.updateUser(user);
+    }
+
+    @Override
+    public List<UserParam> getUsersByUserIds(List<Long> userIds) {
+        return userMapper.getUsersByUserIds(userIds);
     }
 
 

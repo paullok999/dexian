@@ -2,10 +2,10 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kalok.dexian.portal.mapper.UserBrowseHistoryMapper">
 
-        <select id="getBrowseHistoryOrderByDate" resultType="com.kalok.dexian.portal.domain.UserBrowseHistory">
+        <select id="getBrowseHistoryOrderByDate" resultType="com.kalok.dexian.portal.entity.UserBrowseHistory">
             select * from user_browse_history order by browse_time desc
         </select>
-        <insert id="insertUserBrowseHistory" parameterType="com.kalok.dexian.portal.domain.UserBrowseHistory">
+        <insert id="insertUserBrowseHistory" parameterType="com.kalok.dexian.portal.entity.UserBrowseHistory">
                 insert into user_browse_history(relation_id,browse_time,history_type)
                 values(#{userBrowseHistory.relationId},#{userBrowseHistory.browseTime},#{userBrowseHistory.historyType})
         </insert>
@@ -14,7 +14,7 @@
                 select count(1) from user_browse_history where relation_id = #{relationId}
         </select>
 
-        <update id="updateUserBrowseHistory" parameterType="com.kalok.dexian.portal.domain.UserBrowseHistory">
+        <update id="updateUserBrowseHistory" parameterType="com.kalok.dexian.portal.entity.UserBrowseHistory">
             update user_browse_history set browse_time = #{userBrowseHistory.browseTime}
             where relation_id = #{userBrowseHistory.relationId}
         </update>

@@ -1,7 +1,6 @@
 package com.kalok.dexian.portal.service.impl;
 
-import com.kalok.dexian.portal.domain.User;
-import com.kalok.dexian.portal.domain.UserBrowseHistory;
+import com.kalok.dexian.portal.entity.UserBrowseHistory;
 import com.kalok.dexian.portal.mapper.UserBrowseHistoryMapper;
 import com.kalok.dexian.portal.service.UserBrowseHistoryService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kalok.dexian.portal.mapper.IdleItemImageMapper">
-    <select id="getAllImagesById" parameterType="java.lang.Long" resultType="com.kalok.dexian.portal.domain.IdleItemImage">
+    <select id="getAllImagesById" parameterType="java.lang.Long" resultType="com.kalok.dexian.portal.entity.IdleItemImage">
         select * from idle_item_images where idle_item_id = #{itemId}
     </select>
 

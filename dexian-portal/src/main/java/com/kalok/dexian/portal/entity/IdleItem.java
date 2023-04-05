@@ -1,4 +1,4 @@
-package com.kalok.dexian.portal.domain;
+package com.kalok.dexian.portal.entity;
 
 import lombok.Data;
 

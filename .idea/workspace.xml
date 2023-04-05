@@ -15,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -41,47 +41,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "D:/Program Files/Project/dexian/dexian-portal/src/main/java/com/kalok/dexian/portal/domain",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.ignored.files",
-    "spring.configuration.checksum": "22633825789ab33f3a66a93c85e1128c",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Program Files/Project/dexian/dexian-portal/src/main/java/com/kalok/dexian/portal/domain&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;22633825789ab33f3a66a93c85e1128c&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.kalok.dexian.portal.mapper" />
       <recent name="com.kalok.dexian.portal.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DexianPortalApplication">
-    <configuration name="DexianCommonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="dexian-common" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kalok.dexian.common.DexianCommonApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="DexianPortalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="dexian-portal" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.kalok.dexian.portal.DexianPortalApplication" />
@@ -102,7 +95,10 @@
       <workItem from="1679670048806" duration="4998000" />
       <workItem from="1680006732296" duration="8913000" />
       <workItem from="1680330814595" duration="1200000" />
-      <workItem from="1680338410580" duration="11880000" />
+      <workItem from="1680338410580" duration="15899000" />
+      <workItem from="1680415589774" duration="8879000" />
+      <workItem from="1680609395034" duration="8522000" />
+      <workItem from="1680673961254" duration="24331000" />
     </task>
     <task id="LOCAL-00001" summary="dexian first commit">
       <created>1679666526131</created>
@@ -158,23 +154,57 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/controller/UserCollectController.java</url>
-          <line>54</line>
-          <properties class="com.kalok.dexian.portal.controller.UserCollectController" method="cancelCollects">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
+        <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/service/impl/UserBrowseHistoryServiceImpl.java</url>
-          <line>23</line>
+          <line>22</line>
           <properties class="com.kalok.dexian.portal.service.impl.UserBrowseHistoryServiceImpl" method="getAllBrowseHistory">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>file://$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/controller/ForumPostController.java</url>
+          <line>43</line>
+          <properties class="com.kalok.dexian.portal.controller.ForumPostController" method="releasePost">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>file://$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/controller/ForumPostController.java</url>
+          <line>60</line>
+          <properties class="com.kalok.dexian.portal.controller.ForumPostController" method="editPost">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>file://$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/service/impl/ForumPostServiceImpl.java</url>
+          <line>51</line>
+          <properties class="com.kalok.dexian.portal.service.impl.ForumPostServiceImpl" method="updatePost">
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/service/impl/ForumPostCommentServiceImpl.java</url>
+          <line>60</line>
+          <properties class="com.kalok.dexian.portal.service.impl.ForumPostCommentServiceImpl" method="deleteComment">
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/dexian-portal/src/main/java/com/kalok/dexian/portal/service/impl/ForumPostCommentServiceImpl.java</url>
+          <line>70</line>
+          <properties class="com.kalok.dexian.portal.service.impl.ForumPostCommentServiceImpl" method="getSubCommentIds">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

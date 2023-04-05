@@ -1,6 +1,6 @@
 package com.kalok.dexian.portal.mapper;
 
-import com.kalok.dexian.portal.domain.IdleItem;
+import com.kalok.dexian.portal.entity.IdleItem;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
@@ -21,4 +21,8 @@ public interface IdleItemMapper {
     int updateItemById(@Param("item") IdleItem idleItem);
 
     List<IdleItem> getItemByIds(@Param("itemIds") List<Long> relationIds);
+
+    int addBrowseCount(@Param("itemId") Long itemId);
+
+    int addCollectCount(@Param("itemId")Long itemId);
 }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kalok.dexian.portal.mapper.PostVideoMapper">
+    <insert id="insertAllVideosByPostId">
+        insert into post_videos(post_id,video_url) values
+        <foreach item="video" collection="videos" separator=",">
+            (#{postId},#{video.videoUrl})
+        </foreach>
+    </insert>
+
+    <update id="updateAllVideosByPostId" parameterType="java.util.List">
+        update post_videos set video_url = case
+        <foreach collection="videos" item="video">
+            when id = #{video.id} then #{video.videoUrl}
+        </foreach>
+        end
+        where post_id in
+        <foreach collection="videos" item="video" open="(" separator="," close=")">
+            #{video.postId}
+        </foreach>
+    </update>
+
+    <select id="getAllVideosByPostId" resultType="com.kalok.dexian.portal.entity.PostVideo">
+        select * from post_videos where post_id = #{postId}
+    </select>
+
+    <delete id="deleteAllVideosByPostId">
+        delete from post_videos where post_id = #{postId}
+    </delete>
+</mapper>

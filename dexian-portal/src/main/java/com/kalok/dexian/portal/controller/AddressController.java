@@ -2,11 +2,9 @@ package com.kalok.dexian.portal.controller;
 
 import com.kalok.dexian.common.api.CommonResult;
 import com.kalok.dexian.common.api.ResultCode;
-import com.kalok.dexian.portal.domain.User;
-import com.kalok.dexian.portal.domain.Address;
+import com.kalok.dexian.portal.entity.Address;
 import com.kalok.dexian.portal.dto.AddressParam;
 import com.kalok.dexian.portal.service.AddressService;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

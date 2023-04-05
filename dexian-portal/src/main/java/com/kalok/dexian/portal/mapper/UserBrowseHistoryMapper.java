@@ -1,7 +1,7 @@
 package com.kalok.dexian.portal.mapper;
 
 
-import com.kalok.dexian.portal.domain.UserBrowseHistory;
+import com.kalok.dexian.portal.entity.UserBrowseHistory;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

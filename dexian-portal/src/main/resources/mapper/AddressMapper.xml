@@ -2,18 +2,18 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kalok.dexian.portal.mapper.AddressMapper">
 
-    <select id="queryAll" resultType="com.kalok.dexian.portal.domain.Address" parameterType="java.lang.Long">
+    <select id="queryAll" resultType="com.kalok.dexian.portal.entity.Address" parameterType="java.lang.Long">
         select ua.name,ua.type,ua.phone_number,ua.default_status,ua.post_code,
                ua.province,ua.city,ua.region,ua.detail_address from user_address ua where ua.user_id = #{userId}
     </select>
 
-    <update id="updateAddress" parameterType="com.kalok.dexian.portal.domain.Address">
+    <update id="updateAddress" parameterType="com.kalok.dexian.portal.entity.Address">
         update user_address set name = #{name},type = #{type},phone_number = #{phoneNumber},
             default_status = #{defaultStatus},post_code = #{postCode},province = #{province},city = #{city},region = #{region},
             detail_address = #{detailAddress} where id = #{id}
     </update>
 
-    <insert id="insertAddress" parameterType="com.kalok.dexian.portal.domain.Address">
+    <insert id="insertAddress" parameterType="com.kalok.dexian.portal.entity.Address">
         insert into user_address(user_id,name,type,phone_number,default_status,post_code,province,city,region,detail_address)
             values (#{userId},#{name},#{type},#{phoneNumber},#{defaultStatus},#{postCode},#{province},#{city},#{region},#{detailAddress})
     </insert>

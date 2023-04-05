@@ -1,7 +1,7 @@
 package com.kalok.dexian.portal.controller;
 
 import com.kalok.dexian.common.api.CommonResult;
-import com.kalok.dexian.portal.domain.User;
+import com.kalok.dexian.portal.entity.User;
 import com.kalok.dexian.portal.dto.UserParam;
 import com.kalok.dexian.portal.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

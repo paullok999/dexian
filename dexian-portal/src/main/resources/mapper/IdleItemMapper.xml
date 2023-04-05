@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kalok.dexian.portal.mapper.IdleItemMapper">
 
-    <select id="getItemById" parameterType="java.lang.Long" resultType="com.kalok.dexian.portal.domain.IdleItem">
+    <select id="getItemById" parameterType="java.lang.Long" resultType="com.kalok.dexian.portal.entity.IdleItem">
         select it.* from idle_item it where id = #{itemId}
     </select>
 
@@ -13,7 +13,7 @@
         </if>
     </select>
 
-    <insert id="insertItem" parameterType="com.kalok.dexian.portal.domain.IdleItem">
+    <insert id="insertItem" parameterType="com.kalok.dexian.portal.entity.IdleItem">
         insert into idle_item(user_id,price,description,is_new,item_status,delivery_method,release_time)
         values (#{item.userId},#{item.price},#{item.description},#{item.isNew},#{item.itemStatus},#{item.deliveryMethod},#{item.releaseTime})
     </insert>
@@ -26,15 +26,23 @@
         delete from idle_item where id = #{itemId};
     </delete>
 
-    <update id="updateItemById" parameterType="com.kalok.dexian.portal.domain.IdleItem">
+    <update id="updateItemById" parameterType="com.kalok.dexian.portal.entity.IdleItem">
         update idle_item set price = #{item.price},description = #{item.description},is_new = #{item.isNew},
         delivery_method = #{item.deliveryMethod},release_time = #{item.releaseTime} where id = #{item.id}
     </update>
 
-    <select id="getItemByIds" parameterType="java.util.List" resultType="com.kalok.dexian.portal.domain.IdleItem">
+    <select id="getItemByIds" parameterType="java.util.List" resultType="com.kalok.dexian.portal.entity.IdleItem">
         select * from idle_item where id in
         <foreach collection="itemIds" item="itemId" open="(" separator="," close=")">
             #{itemId}
         </foreach>
     </select>
+
+    <update id="addBrowseCount">
+        update idle_item set browse_count = browse_count + 1 where id = #{itemId}
+    </update>
+
+    <update id="addCollectCount">
+        update idle_item set collect_count = collect_count + 1 where id = #{itemId}
+    </update>
 </mapper>

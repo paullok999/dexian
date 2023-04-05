@@ -1,6 +1,6 @@
 package com.kalok.dexian.portal.service.impl;
 
-import com.kalok.dexian.portal.domain.Address;
+import com.kalok.dexian.portal.entity.Address;
 import com.kalok.dexian.portal.dto.AddressParam;
 import com.kalok.dexian.portal.mapper.AddressMapper;
 import com.kalok.dexian.portal.service.AddressService;

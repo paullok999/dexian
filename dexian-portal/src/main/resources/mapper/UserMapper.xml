@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kalok.dexian.portal.mapper.UserMapper">
-    <select id="getUserByUserName" resultType="com.kalok.dexian.portal.domain.User">
+    <select id="getUserByUserName" resultType="com.kalok.dexian.portal.entity.User">
         SELECT u.* FROM user_info u WHERE u.username = #{username}
     </select>
 
-    <insert id="insertUser" parameterType="com.kalok.dexian.portal.domain.User">
+    <insert id="insertUser" parameterType="com.kalok.dexian.portal.entity.User">
         insert into user_info(username,password,icon,gender,email,nick_name,create_time,login_time)
                 values(#{username},#{password},#{icon},#{gender},#{email},#{nickName},#{createTime},#{loginTime})
     </insert>
 
-    <update id="updateUser" parameterType="com.kalok.dexian.portal.domain.User">
+    <update id="updateUser" parameterType="com.kalok.dexian.portal.entity.User">
         update user_info set username = #{username},icon = #{icon},gender = #{gender},
         email = #{email},nick_name = #{nickName} where id = #{id}
     </update>
 
-    <update id="updateLoginTime" parameterType="com.kalok.dexian.portal.domain.User">
+    <update id="updateLoginTime" parameterType="com.kalok.dexian.portal.entity.User">
         update user_info set login_time = #{loginTime} where id = #{id}
     </update>
+
+    <select id="getUsersByUserIds" resultType="com.kalok.dexian.portal.dto.UserParam">
+        select * from user_info where id in
+        <foreach collection="userIds" item="userId" open="(" separator="," close=")">
+            #{userId}
+        </foreach>
+    </select>
 </mapper>

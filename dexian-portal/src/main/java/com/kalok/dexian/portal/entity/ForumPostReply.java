@@ -1,4 +1,4 @@
-package com.kalok.dexian.portal.domain;
+package com.kalok.dexian.portal.entity;
 
 
 import lombok.Data;
@@ -6,12 +6,12 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-public class ForumPostComment {
+public class ForumPostReply {
 
   private Long id;
-  private Long parentCommentId;
+  private Long commentId;
   private Long userId;
-  private String commentContent;
+  private String replyContent;
   private Long likeCount;
   private Date releaseTime;
 

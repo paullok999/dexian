@@ -2,8 +2,8 @@ package com.kalok.dexian.portal.controller;
 
 import com.kalok.dexian.common.api.CommonResult;
 import com.kalok.dexian.common.tool.MapAndObjectUtil;
-import com.kalok.dexian.portal.domain.IdleItemImage;
-import com.kalok.dexian.portal.domain.IdleItemVideo;
+import com.kalok.dexian.portal.entity.IdleItemImage;
+import com.kalok.dexian.portal.entity.IdleItemVideo;
 import com.kalok.dexian.portal.dto.IdleItemParam;
 import com.kalok.dexian.portal.service.IdleItemService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +37,7 @@ public class IdleItemController {
     }
 
     /**
-     * TODO:发布闲置物品
+     * 发布闲置物品
      * @return
      */
     @RequestMapping(value = "/release",method = RequestMethod.POST)
@@ -48,7 +48,7 @@ public class IdleItemController {
         IdleItemParam idleItemParam = (IdleItemParam) MapAndObjectUtil.MapToObject(idleItemMap, IdleItemParam.class);
         List<IdleItemImage> images = (List<IdleItemImage>) paramMap.get("images");
         List<IdleItemVideo> videos = (List<IdleItemVideo>) paramMap.get("videos");
-        int count = idleItemService.insertNewItem(idleItemParam,images,videos);
+        int count = idleItemService.releaseItem(idleItemParam,images,videos);
         if(count > 0){
             return CommonResult.success("发布闲置物品成功");
         }
@@ -56,7 +56,7 @@ public class IdleItemController {
     }
 
     /**
-     *  TODO:编辑闲置物品
+     *  编辑闲置物品
      */
     @RequestMapping(value = "/edit",method = RequestMethod.POST)
     @ResponseBody

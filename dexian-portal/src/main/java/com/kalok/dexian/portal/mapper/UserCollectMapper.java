@@ -1,6 +1,6 @@
 package com.kalok.dexian.portal.mapper;
 
-import com.kalok.dexian.portal.domain.UserCollect;
+import com.kalok.dexian.portal.entity.UserCollect;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

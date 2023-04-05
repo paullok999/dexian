@@ -1,7 +1,6 @@
 package com.kalok.dexian.portal.mapper;
 
-import com.kalok.dexian.portal.domain.Address;
-import com.kalok.dexian.portal.dto.AddressParam;
+import com.kalok.dexian.portal.entity.Address;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

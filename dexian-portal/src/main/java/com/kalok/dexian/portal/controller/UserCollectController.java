@@ -1,7 +1,7 @@
 package com.kalok.dexian.portal.controller;
 
 import com.kalok.dexian.common.api.CommonResult;
-import com.kalok.dexian.portal.domain.UserCollect;
+import com.kalok.dexian.portal.entity.UserCollect;
 import com.kalok.dexian.portal.service.UserCollectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,7 +19,7 @@ public class UserCollectController {
     UserCollectService userCollectService;
 
     /**
-     * 获取指定类型的全部用户收藏
+     * 获取全部用户收藏(指定类型)
      */
     @RequestMapping(value = "/all",method = RequestMethod.POST)
     @ResponseBody
@@ -33,7 +33,7 @@ public class UserCollectController {
     }
 
     /**
-     * TODO:加入收藏夹
+     * 加入收藏夹
      */
     @RequestMapping(value = "/add",method = RequestMethod.POST)
     @ResponseBody

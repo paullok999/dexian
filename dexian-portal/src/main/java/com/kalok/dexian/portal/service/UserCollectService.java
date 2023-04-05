@@ -1,6 +1,6 @@
 package com.kalok.dexian.portal.service;
 
-import com.kalok.dexian.portal.domain.UserCollect;
+import com.kalok.dexian.portal.entity.UserCollect;
 
 import java.util.List;
 import java.util.Map;

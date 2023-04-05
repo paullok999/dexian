@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kalok.dexian.portal.mapper.IdleItemVideoMapper">
-    <select id="getAllVideosById" parameterType="java.lang.Long" resultType="com.kalok.dexian.portal.domain.IdleItemVideo">
+    <select id="getAllVideosById" parameterType="java.lang.Long" resultType="com.kalok.dexian.portal.entity.IdleItemVideo">
         select * from idle_item_videos where idle_item_id = #{itemId}
     </select>
 

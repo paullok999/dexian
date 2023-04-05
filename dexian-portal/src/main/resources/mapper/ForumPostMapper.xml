@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kalok.dexian.portal.mapper.ForumPostMapper">
+    <insert id="insertPost" parameterType="com.kalok.dexian.portal.entity.ForumPost">
+            insert into forum_post(user_id,post_content,release_time)
+            values(#{forumPost.userId},#{forumPost.postContent},#{forumPost.releaseTime})
+    </insert>
+
+    <select id="getAllPostByUserId" resultType="java.lang.Long">
+            select fp.id from forum_post fp where user_id = #{userId}
+            <if test="isSort == true">
+                order by release_time desc
+            </if>
+    </select>
+
+    <update id="updatePost" parameterType="com.kalok.dexian.portal.entity.ForumPost">
+            update forum_post set post_content = #{forumPost.postContent},
+            release_time = #{forumPost.releaseTime} where id = #{forumPost.id}
+    </update>
+
+    <delete id="deletePost">
+        delete from forum_post where id = #{postId}
+    </delete>
+
+    <select id="getPostByPostId" resultType="com.kalok.dexian.portal.entity.ForumPost">
+        select * from forum_post where id = #{postId}
+    </select>
+
+    <update id="likePostByPostId">
+        update forum_post set like_count = like_count + 1 where id = #{postId}
+    </update>
+
+    <update id="addBrowseCount">
+        update forum_post set browse_count = browse_count + 1 where id = #{postId}
+    </update>
+
+    <update id="addCollectCount">
+        update forum_post set collect_count = collect_count + 1 where id = #{postId}
+    </update>
+
+    <select id="getPostByIds" parameterType="java.util.List" resultType="com.kalok.dexian.portal.entity.ForumPost">
+        select * from forum_post where id in
+        <foreach collection="postIds" item="postId" open="(" separator="," close=")">
+            #{postId}
+        </foreach>
+    </select>
+</mapper>

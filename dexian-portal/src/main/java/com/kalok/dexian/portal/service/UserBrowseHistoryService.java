@@ -1,8 +1,7 @@
 package com.kalok.dexian.portal.service;
 
-import com.kalok.dexian.portal.domain.UserBrowseHistory;
+import com.kalok.dexian.portal.entity.UserBrowseHistory;
 
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 

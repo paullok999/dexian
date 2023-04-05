@@ -1,6 +1,6 @@
 package com.kalok.dexian.portal.mapper;
 
-import com.kalok.dexian.portal.domain.IdleItemImage;
+import com.kalok.dexian.portal.entity.IdleItemImage;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
@@ -10,9 +10,9 @@ import java.util.List;
 public interface IdleItemImageMapper {
     List<IdleItemImage> getAllImagesById(@Param("itemId")Long itemId);
 
-    void insertAllImagesByItemId(List<IdleItemImage> images,@Param("idleItemId") Long idleItemId);
+    int insertAllImagesByItemId(List<IdleItemImage> images,@Param("idleItemId") Long idleItemId);
 
-    void deleteImagesById(@Param("itemId") Long idleItemId);
+    int deleteImagesById(@Param("itemId") Long idleItemId);
 
-    void updateAllImagesByItemId(List<IdleItemImage> images, Long idleItemId);
+    int updateAllImagesByItemId(List<IdleItemImage> images,@Param("idleItemId") Long idleItemId);
 }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kalok.dexian.portal.mapper.ForumPostCommentMapper">
+    <select id="getAllCommentsByPostId" resultType="com.kalok.dexian.portal.entity.ForumPostComment">
+        select * from forum_post_comment where post_id = #{postId}
+    </select>
+
+    <insert id="insertComment" parameterType="com.kalok.dexian.portal.entity.ForumPostComment">
+        insert into forum_post_comment(post_id,parent_comment_id,user_id,comment_content,release_time) values(#{comment.postId},#{comment.parentCommentId},#{comment.userId},
+        #{comment.commentContent},#{comment.releaseTime})
+    </insert>
+
+    <update id="addLikeCount">
+        update forum_post_comment set like_count = like_count + 1 where id = #{commentId} and post_id = #{postId}
+    </update>
+
+    <delete id="deleteComment">
+        delete from forum_post_comment where id = #{commentId} and post_id = #{postId}
+    </delete>
+
+    <delete id="deleteComments">
+        delete from forum_post_comment where id in
+        <foreach collection="commentIds" item="commentId" open="(" close=")" separator=",">
+                #{commentId}
+        </foreach>
+    </delete>
+</mapper>

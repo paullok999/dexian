@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kalok.dexian.portal.mapper.UserSocialMapper">
+    <select id="queryRelationWithType" resultType="com.kalok.dexian.portal.entity.UserSocialRelation">
+        select * from user_social_relation where user_id = #{userId}
+        and another_user_id = #{anotherUserId} and relation_type = #{relationType}
+    </select>
+
+    <insert id="insertRelationWithType" parameterType="com.kalok.dexian.portal.entity.UserSocialRelation">
+        insert into user_social_relation(user_id,another_user_id,relation_type)
+        values(#{relation.userId},#{relation.anotherUserId},#{relation.relationType})
+    </insert>
+
+    <delete id="deleteRelationWithType">
+        delete from user_social_relation where user_id = #{userId}
+        and another_user_id = #{anotherUserId} and relation_type = #{relationType}
+    </delete>
+
+    <select id="getRelationWithType" resultType="com.kalok.dexian.portal.entity.UserSocialRelation">
+        select * from user_social_relation where user_id = #{userId}
+        and relation_type = #{relationType}
+    </select>
+</mapper>

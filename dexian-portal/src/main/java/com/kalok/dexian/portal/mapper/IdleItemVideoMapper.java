@@ -1,6 +1,6 @@
 package com.kalok.dexian.portal.mapper;
 
-import com.kalok.dexian.portal.domain.IdleItemVideo;
+import com.kalok.dexian.portal.entity.IdleItemVideo;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
@@ -10,9 +10,9 @@ import java.util.List;
 public interface IdleItemVideoMapper {
     List<IdleItemVideo> getAllVideosById(@Param("itemId")Long itemId);
 
-    void insertAllVideosByItemId(List<IdleItemVideo> videos,@Param("idleItemId") Long idleItemId);
+    int insertAllVideosByItemId(List<IdleItemVideo> videos,@Param("idleItemId") Long idleItemId);
 
-    void deleteVideosById(@Param("itemId")Long idleItemId);
+    int deleteVideosById(@Param("itemId")Long idleItemId);
 
-    void updateAllVideosByItemId(List<IdleItemVideo> videos, Long idleItemId);
+    int updateAllVideosByItemId(List<IdleItemVideo> videos, Long idleItemId);
 }

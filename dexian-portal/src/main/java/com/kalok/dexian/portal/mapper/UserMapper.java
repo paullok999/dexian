@@ -1,8 +1,11 @@
 package com.kalok.dexian.portal.mapper;
 
-import com.kalok.dexian.portal.domain.User;
+import com.kalok.dexian.portal.dto.UserParam;
+import com.kalok.dexian.portal.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 @Mapper
 public interface UserMapper {
@@ -14,4 +17,6 @@ public interface UserMapper {
     int updateUser(User user);
 
     int updateLoginTime(User user);
+
+    List<UserParam> getUsersByUserIds(@Param("userIds") List<Long> userIds);
 }
