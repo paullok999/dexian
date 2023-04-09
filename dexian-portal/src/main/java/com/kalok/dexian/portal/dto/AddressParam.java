@@ -4,6 +4,7 @@ import lombok.Data;
 
 @Data
 public class AddressParam {
+    private Long id;
     private String name;
 
     private Integer type;

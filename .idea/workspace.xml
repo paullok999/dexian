@@ -73,6 +73,9 @@
       <recent name="com.kalok.dexian.portal.mapper" />
       <recent name="com.kalok.dexian.portal.service" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Program Files\Project\dexian\docs" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="DexianPortalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -99,6 +102,8 @@
       <workItem from="1680415589774" duration="8879000" />
       <workItem from="1680609395034" duration="8522000" />
       <workItem from="1680673961254" duration="25022000" />
+      <workItem from="1680880627709" duration="128000" />
+      <workItem from="1680959779919" duration="6669000" />
     </task>
     <task id="LOCAL-00001" summary="dexian first commit">
       <created>1679666526131</created>

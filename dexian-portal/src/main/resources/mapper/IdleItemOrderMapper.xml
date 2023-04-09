@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kalok.dexian.portal.mapper.IdleItemOrderMapper">
+    <select id="getOrdersByType" resultType="com.kalok.dexian.portal.entity.IdleItemOrder">
+        select * from idle_item_order where order_type = #{orderType}
+    </select>
+
+    <insert id="insertOrder" parameterType="com.kalok.dexian.portal.entity.IdleItemOrder">
+        insert into idle_item_order(idle_item_id,user_id,address_id,order_price,order_type,order_status,create_time,last_update_time)
+        values(#{order.idleItemId},#{order.userId},#{order.addressId},#{order.orderPrice},
+               #{order.orderType},#{order.orderStatus},#{order.createTime},#{order.lastUpdateTime})
+    </insert>
+
+    <delete id="deleteOrder">
+        delete from idle_item_order where id = #{orderId}
+    </delete>
+
+    <update id="updateStatus">
+        update idle_item_order set order_status = #{orderStatus} where id = #{orderId}
+    </update>
+</mapper>
