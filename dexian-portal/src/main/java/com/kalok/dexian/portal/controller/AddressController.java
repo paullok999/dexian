@@ -22,9 +22,9 @@ public class AddressController {
     private AddressService addressService;
 
     /**
-     * TODO:查询指定用户的寄件/收货/退货地址
+     * 查询指定用户的寄件/收货/退货地址
      */
-    @RequestMapping(path = "/query/{userId}")
+    @RequestMapping(path = "/query/{userId}",method = RequestMethod.GET)
     @ResponseBody
     public CommonResult<List<Address>> queryAddress(@PathVariable Long userId){
         if(userId == null)return CommonResult.failed(ResultCode.VALIDATE_FAILED);
@@ -53,7 +53,7 @@ public class AddressController {
         return CommonResult.failed(ResultCode.FAILED,"修改地址失败");
     }
 
-    @RequestMapping(path = "/delete/{addressId}")
+    @RequestMapping(path = "/delete/{addressId}",method = RequestMethod.POST)
     @ResponseBody
     public CommonResult deleteAddress(@PathVariable("addressId") Long addressId){
         int count = addressService.deleteAddress(addressId);
@@ -61,5 +61,15 @@ public class AddressController {
             return CommonResult.success(ResultCode.SUCCESS,"删除成功");
         }
         return CommonResult.failed(ResultCode.FAILED,"删除地址失败");
+    }
+    @RequestMapping("/info")
+    @ResponseBody
+    public CommonResult queryCertainAddressInfo(@RequestParam Long userId,
+                                                @RequestParam Long addressId){
+        Address address = addressService.queryAddressByUserIdAndAddressId(userId,addressId);
+        if(address == null){
+            return CommonResult.failed("查询地址失败~");
+        }
+        return CommonResult.success(address,"查询地址成功~");
     }
 }

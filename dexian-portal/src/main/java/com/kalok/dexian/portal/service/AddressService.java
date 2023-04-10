@@ -13,4 +13,6 @@ public interface AddressService {
     int updateAddressByAddressId(Long addressId, AddressParam addressParam);
 
     int insertAddress(Address address);
+
+    Address queryAddressByUserIdAndAddressId(Long userId, Long addressId);
 }

@@ -15,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -104,6 +104,9 @@
       <workItem from="1680673961254" duration="25022000" />
       <workItem from="1680880627709" duration="128000" />
       <workItem from="1680959779919" duration="6669000" />
+      <workItem from="1681055541598" duration="133000" />
+      <workItem from="1681128177127" duration="1087000" />
+      <workItem from="1681129697163" duration="5868000" />
     </task>
     <task id="LOCAL-00001" summary="dexian first commit">
       <created>1679666526131</created>

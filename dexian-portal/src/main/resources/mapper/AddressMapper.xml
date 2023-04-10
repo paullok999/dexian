@@ -3,7 +3,7 @@
 <mapper namespace="com.kalok.dexian.portal.mapper.AddressMapper">
 
     <select id="queryAll" resultType="com.kalok.dexian.portal.entity.Address" parameterType="java.lang.Long">
-        select ua.name,ua.type,ua.phone_number,ua.default_status,ua.post_code,
+        select ua.id,ua.user_id,ua.name,ua.type,ua.phone_number,ua.default_status,ua.post_code,
                ua.province,ua.city,ua.region,ua.detail_address from user_address ua where ua.user_id = #{userId}
     </select>
 
@@ -21,4 +21,8 @@
     <delete id="deleteAddressByAddressId" parameterType="java.lang.Long">
         delete from user_address where id = #{addressId}
     </delete>
+
+    <select id="queryAddressByUserIdAndAddressId" resultType="com.kalok.dexian.portal.entity.Address">
+        select * from user_address where id = #{addressId} and user_id = #{userId}
+    </select>
 </mapper>

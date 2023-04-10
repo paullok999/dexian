@@ -40,4 +40,9 @@ public class AddressServiceImpl implements AddressService {
     public int insertAddress(Address address) {
         return addressMapper.insertAddress(address);
     }
+
+    @Override
+    public Address queryAddressByUserIdAndAddressId(Long userId, Long addressId) {
+        return addressMapper.queryAddressByUserIdAndAddressId(userId,addressId);
+    }
 }

@@ -15,4 +15,6 @@ public interface AddressMapper {
     int updateAddress(Address address);
 
     int deleteAddressByAddressId(@Param("addressId")Long addressId);
+
+    Address queryAddressByUserIdAndAddressId(@Param("userId") Long userId,@Param("addressId") Long addressId);
 }
