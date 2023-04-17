@@ -6,10 +6,7 @@ import com.kalok.dexian.portal.dto.UserParam;
 import com.kalok.dexian.portal.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/user")
@@ -56,5 +53,15 @@ public class UserController {
             return CommonResult.success("编辑用户信息成功~");
         }
         return CommonResult.failed("编辑用户信息失败");
+    }
+
+    @RequestMapping(path = "/info/{userId}",method = RequestMethod.GET)
+    @ResponseBody
+    public CommonResult getUserInfo(@PathVariable("userId")Long userId){
+        UserParam user = userService.getUserInfoById(userId);
+        if(user == null){
+            return CommonResult.failed("用户不存在");
+        }
+        return CommonResult.success(user,"查询用户信息成功");
     }
 }

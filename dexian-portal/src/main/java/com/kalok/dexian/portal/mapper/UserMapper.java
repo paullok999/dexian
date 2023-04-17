@@ -19,4 +19,6 @@ public interface UserMapper {
     int updateLoginTime(User user);
 
     List<UserParam> getUsersByUserIds(@Param("userIds") List<Long> userIds);
+
+    UserParam getUserInfoById(@Param("userId")Long userId);
 }

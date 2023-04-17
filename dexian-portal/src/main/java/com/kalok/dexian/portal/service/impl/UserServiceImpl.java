@@ -64,5 +64,10 @@ public class UserServiceImpl implements UserService {
         return userMapper.getUsersByUserIds(userIds);
     }
 
+    @Override
+    public UserParam getUserInfoById(Long userId) {
+        return userMapper.getUserInfoById(userId);
+    }
+
 
 }

@@ -5,7 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3839fc96-7206-4234-93d6-c969c1406b1e" name="Changes" comment="dexian second commit">
+      <change afterPath="$PROJECT_DIR$/dexian-chat/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-chat/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-chat/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-chat/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-chat/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-chat/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/DexianChatApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-chat/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-chat/src/test/java/com/kalok/dexian/chat/DexianChatApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-search/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-search/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-search/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-search/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-search/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-search/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-search/src/main/java/com/kalok/dexian/search/DexianSearchApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-search/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dexian-search/src/test/java/com/kalok/dexian/search/DexianSearchApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +74,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Program Files/Project/dexian/dexian-portal/src/main/java/com/kalok/dexian/portal/domain&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Program Files/Git/subtlechat&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -77,10 +99,24 @@
       <recent name="D:\Program Files\Project\dexian\docs" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.DexianPortalApplication">
+    <configuration name="DexianChatApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="dexian-chat" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kalok.dexian.chat.DexianChatApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DexianPortalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="dexian-portal" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.kalok.dexian.portal.DexianPortalApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DexianSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="dexian-search" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kalok.dexian.search.DexianSearchApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,7 +142,14 @@
       <workItem from="1680959779919" duration="6669000" />
       <workItem from="1681055541598" duration="133000" />
       <workItem from="1681128177127" duration="1087000" />
-      <workItem from="1681129697163" duration="5868000" />
+      <workItem from="1681129697163" duration="6172000" />
+      <workItem from="1681312679453" duration="1303000" />
+      <workItem from="1681398701048" duration="2664000" />
+      <workItem from="1681472862942" duration="2316000" />
+      <workItem from="1681549991334" duration="7389000" />
+      <workItem from="1681574579135" duration="835000" />
+      <workItem from="1681610947227" duration="2694000" />
+      <workItem from="1681738983646" duration="3717000" />
     </task>
     <task id="LOCAL-00001" summary="dexian first commit">
       <created>1679666526131</created>

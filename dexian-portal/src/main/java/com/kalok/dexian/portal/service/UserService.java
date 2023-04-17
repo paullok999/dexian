@@ -14,4 +14,6 @@ public interface UserService {
     int edit(UserParam userParam);
 
     List<UserParam> getUsersByUserIds(List<Long> userIds);
+
+    UserParam getUserInfoById(Long userId);
 }

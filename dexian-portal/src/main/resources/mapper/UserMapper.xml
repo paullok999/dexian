@@ -25,4 +25,8 @@
             #{userId}
         </foreach>
     </select>
+
+    <select id="getUserInfoById" resultType="com.kalok.dexian.portal.dto.UserParam">
+        select * from user_info where id = #{userId}
+    </select>
 </mapper>
