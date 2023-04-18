@@ -32,4 +32,9 @@ public class IdleItemImageServiceImpl implements IdleItemImageService {
     public List<IdleItemImage> getAllImagesById(Long itemId) {
         return idleItemImageMapper.getAllImagesById(itemId);
     }
+
+    @Override
+    public List<IdleItemImage> getAllImages() {
+        return idleItemImageMapper.getAllImages();
+    }
 }

@@ -15,4 +15,6 @@ public interface IdleItemImageMapper {
     int deleteImagesById(@Param("itemId") Long idleItemId);
 
     int updateAllImagesByItemId(List<IdleItemImage> images,@Param("idleItemId") Long idleItemId);
+
+    List<IdleItemImage> getAllImages();
 }

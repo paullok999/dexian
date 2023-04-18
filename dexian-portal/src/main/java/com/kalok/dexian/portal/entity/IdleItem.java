@@ -25,4 +25,6 @@ public class IdleItem {
     private Integer deliveryMethod;
 
     private Date releaseTime;
+
+    private IdleItemImage cover; //冗余,闲置物品的封面照片
 }

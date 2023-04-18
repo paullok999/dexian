@@ -12,4 +12,6 @@ public interface IdleItemImageService {
     int insertImages(List<IdleItemImage> images, Long id);
 
     List<IdleItemImage> getAllImagesById(Long itemId);
+
+    List<IdleItemImage> getAllImages();
 }

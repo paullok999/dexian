@@ -24,4 +24,6 @@ public interface IdleItemService {
     int addCollectCount(Long itemId);
 
     List<IdleItem> getItemByIds(List<Long> relationIds);
+
+    List<IdleItem> getLatestIdleItems();
 }

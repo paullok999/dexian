@@ -25,4 +25,6 @@ public interface IdleItemMapper {
     int addBrowseCount(@Param("itemId") Long itemId);
 
     int addCollectCount(@Param("itemId")Long itemId);
+
+    List<IdleItem> getItemsByTime();
 }

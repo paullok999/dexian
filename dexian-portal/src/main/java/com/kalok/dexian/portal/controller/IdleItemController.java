@@ -2,6 +2,7 @@ package com.kalok.dexian.portal.controller;
 
 import com.kalok.dexian.common.api.CommonResult;
 import com.kalok.dexian.common.tool.MapAndObjectUtil;
+import com.kalok.dexian.portal.entity.IdleItem;
 import com.kalok.dexian.portal.entity.IdleItemImage;
 import com.kalok.dexian.portal.entity.IdleItemVideo;
 import com.kalok.dexian.portal.dto.IdleItemParam;
@@ -20,6 +21,16 @@ public class IdleItemController {
 
     @Autowired
     IdleItemService idleItemService;
+
+    @RequestMapping(value = "/latest",method = RequestMethod.GET)
+    @ResponseBody
+    public CommonResult getLatest(){
+        List<IdleItem> list = idleItemService.getLatestIdleItems();
+        if(list.size() == 0){
+            return CommonResult.success(list,"还没有人上传闲置物品哟~");
+        }
+        return CommonResult.success(list,"获取闲置物品成功!");
+    }
 
     /**
      * 获取闲置物品详细信息

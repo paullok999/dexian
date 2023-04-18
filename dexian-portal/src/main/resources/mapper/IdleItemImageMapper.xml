@@ -26,4 +26,8 @@
             #{image.idleItemId}
         </foreach>
     </update>
+
+    <select id="getAllImages" resultType="com.kalok.dexian.portal.entity.IdleItemImage">
+        select * from idle_item_images
+    </select>
 </mapper>

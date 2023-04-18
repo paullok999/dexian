@@ -16,10 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Service
 public class IdleItemServiceImpl implements IdleItemService {
@@ -105,6 +102,25 @@ public class IdleItemServiceImpl implements IdleItemService {
     @Override
     public List<IdleItem> getItemByIds(List<Long> relationIds) {
         return idleItemMapper.getItemByIds(relationIds);
+    }
+
+    @Override
+    public List<IdleItem> getLatestIdleItems() {
+        List<IdleItem> res = new ArrayList<IdleItem>();
+        //按时间降序获取闲置物品
+        List<IdleItem> items = idleItemMapper.getItemsByTime();
+        List<IdleItemImage> images = idleItemImageService.getAllImages();
+        //设置封面
+        for(IdleItem item : items){
+            Long curId = item.getId();
+            for(IdleItemImage image : images){
+                if(image.getIdleItemId() == curId){
+                    item.setCover(image);
+                    break;
+                }
+            }
+        }
+        return res;
     }
 
     private IdleItem copyProperties(IdleItemParam param){

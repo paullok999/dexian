@@ -30,6 +30,7 @@
         <mysql-connector.version>8.0.29</mysql-connector.version>
         <dexian-common.version>0.0.1-SNAPSHOT</dexian-common.version>
         <spring-data-commons.version>2.7.0</spring-data-commons.version>
+        <hutool.version>5.8.9</hutool.version>
     </properties>
     <dependencies>
         <!--    导入公用包    -->
@@ -91,6 +92,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
+        </dependency>
+        <!--Hutool Java工具包-->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>${hutool.version}</version>
         </dependency>
     </dependencies>
 

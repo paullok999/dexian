@@ -9,6 +9,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  */
 @Configuration
 @EnableTransactionManagement //开启事务
-@MapperScan(value = {"com.kalok.dexian.portal.mapper"}) //扫描指定mapper包下的mapper接口
+@MapperScan(value = {"com.kalok.dexian.portal.mapper","com.kalok.dexian.search.mapper"}) //扫描指定mapper包下的mapper接口
 public class MyBatisConfig {
 }

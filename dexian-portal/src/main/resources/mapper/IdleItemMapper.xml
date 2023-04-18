@@ -45,4 +45,8 @@
     <update id="addCollectCount">
         update idle_item set collect_count = collect_count + 1 where id = #{itemId}
     </update>
+
+    <select id="getItemsByTime" resultType="com.kalok.dexian.portal.entity.IdleItem">
+        select * from idle_item order by release_time desc limit 50
+    </select>
 </mapper>

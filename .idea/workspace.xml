@@ -5,27 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3839fc96-7206-4234-93d6-c969c1406b1e" name="Changes" comment="dexian second commit">
-      <change afterPath="$PROJECT_DIR$/dexian-chat/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-chat/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-chat/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-chat/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-chat/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-chat/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/DexianChatApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-chat/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-chat/src/test/java/com/kalok/dexian/chat/DexianChatApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-search/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-search/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-search/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-search/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-search/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-search/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-search/src/main/java/com/kalok/dexian/search/DexianSearchApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-search/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dexian-search/src/test/java/com/kalok/dexian/search/DexianSearchApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -63,37 +42,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Program Files/Git/subtlechat&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;22633825789ab33f3a66a93c85e1128c&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "D:/Program Files/Project/dexian/dexian-chat/src/main/java/com/kalok/dexian/chat/api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "spring.configuration.checksum": "e0101e2b91a9c79a9015170ccf720404",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.kalok.dexian.portal.mapper" />
       <recent name="com.kalok.dexian.portal.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Program Files\Project\dexian\dexian-chat\src\main\java\com\kalok\dexian\chat\api" />
+      <recent name="D:\Program Files\Project\dexian\dexian-chat\src\main\java\com\kalok\dexian\chat\api\converter" />
+      <recent name="D:\Program Files\Project\dexian\dexian-chat\src\main\resources" />
+      <recent name="D:\Program Files\Project\dexian\dexian-chat\src\main\java\com\kalok\dexian\chat" />
+      <recent name="D:\Program Files\Project\dexian\dexian-search\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Program Files\Project\dexian\docs" />
@@ -149,7 +135,8 @@
       <workItem from="1681549991334" duration="7389000" />
       <workItem from="1681574579135" duration="835000" />
       <workItem from="1681610947227" duration="2694000" />
-      <workItem from="1681738983646" duration="3717000" />
+      <workItem from="1681738983646" duration="4291000" />
+      <workItem from="1681822820839" duration="8476000" />
     </task>
     <task id="LOCAL-00001" summary="dexian first commit">
       <created>1679666526131</created>
