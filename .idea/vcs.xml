@@ -2,9 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/dexian-chat" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/dexian-common" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/dexian-portal" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/dexian-search" vcs="Git" />
   </component>
 </project>

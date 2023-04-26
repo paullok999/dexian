@@ -6,6 +6,97 @@
   <component name="ChangeListManager">
     <list default="true" id="3839fc96-7206-4234-93d6-c969c1406b1e" name="Changes" comment="dexian second commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/DexianChatApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/api/converter/DateConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/api/converter/MyContentConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/api/converter/MyUrlImageConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/api/data/GroupMsgContentData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/api/entity/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/api/entity/Feedback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/api/entity/GroupMsgContent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/api/entity/MailConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/api/entity/MailSendLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/api/entity/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/api/entity/RespBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/api/entity/RespPageBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/api/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/api/entity/UserState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/api/utils/FastDFSUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/api/utils/ImgUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/api/utils/JsonUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/api/utils/TuLingUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/api/utils/UserUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/config/MultiHttpSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/config/MyAuthenticationFailureHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/config/MyLogoutSuccessHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/config/RabbitMQConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/config/VerificationCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/config/VerificationCodeFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/config/WebSocketConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/controller/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/controller/ChatController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/controller/FileController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/controller/GroupMsgContentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/controller/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/controller/MailController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/controller/UserStateController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/controller/WsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/dao/AdminDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/dao/FeedbackDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/dao/GroupMsgContentDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/dao/MailSendLogDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/dao/UserStateDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/service/AdminService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/service/FeedbackService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/service/GroupMsgContentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/service/MailSendLogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/service/UserStateService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/service/VerifyCodeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/service/impl/AdminServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/service/impl/FeedbackServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/service/impl/GroupMsgContentServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/service/impl/MailSendLogServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/service/impl/UserStateServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/service/impl/VerifyCodeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/java/com/kalok/dexian/chat/task/MailSendTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/resources/application-dev.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/resources/mapper/AdminDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/resources/mapper/FeedbackDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/resources/mapper/GroupMsgContentDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/resources/mapper/MailSendLogDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/resources/mapper/UserDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/main/resources/mapper/UserStateDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-chat/src/test/java/com/kalok/dexian/chat/DexianChatApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-search/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-search/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-search/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-search/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-search/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-search/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-search/src/main/java/com/kalok/dexian/search/DexianSearchApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-search/src/main/java/com/kalok/dexian/search/controller/EsProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-search/src/main/java/com/kalok/dexian/search/domain/EsProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-search/src/main/java/com/kalok/dexian/search/domain/EsProductAttributeValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-search/src/main/java/com/kalok/dexian/search/domain/EsProductRelatedInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-search/src/main/java/com/kalok/dexian/search/mapper/EsProductMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-search/src/main/java/com/kalok/dexian/search/repository/EsProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-search/src/main/java/com/kalok/dexian/search/service/EsProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-search/src/main/java/com/kalok/dexian/search/service/impl/EsProductServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-search/src/main/resources/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-search/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-search/src/main/resources/dao/EsProductMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexian-search/src/test/java/com/kalok/dexian/search/DexianSearchApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,33 +133,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "D:/Program Files/Project/dexian/dexian-chat/src/main/java/com/kalok/dexian/chat/api",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "spring.configuration.checksum": "e0101e2b91a9c79a9015170ccf720404",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Program Files/Project/dexian/dexian-chat/src/main/java/com/kalok/dexian/chat/api&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e0101e2b91a9c79a9015170ccf720404&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.kalok.dexian.portal.mapper" />
@@ -137,6 +228,8 @@
       <workItem from="1681610947227" duration="2694000" />
       <workItem from="1681738983646" duration="4291000" />
       <workItem from="1681822820839" duration="8476000" />
+      <workItem from="1681835018741" duration="71000" />
+      <workItem from="1682518752194" duration="56000" />
     </task>
     <task id="LOCAL-00001" summary="dexian first commit">
       <created>1679666526131</created>

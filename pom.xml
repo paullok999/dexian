@@ -19,8 +19,6 @@
     <modules>
         <module>dexian-portal</module>
         <module>dexian-common</module>
-        <module>dexian-chat</module>
-        <module>dexian-search</module>
     </modules>
     <!--    统一版本号-->
     <properties>
